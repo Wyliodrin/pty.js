@@ -27,9 +27,11 @@
       #   One some systems (at least including Cygwin, Interix,
       #   OSF/1 4 and 5, and Mac OS X) linking with -lutil is not required.
       ['OS=="mac" or OS=="solaris"', {
-        'libraries!': [
-          '-lutil'
-        ]
+        'libraries': [
+          '-lutil',
+          '-L/usr/lib',
+          '-L/usr/local/lib'
+        ],
       }],
     ]
   }]

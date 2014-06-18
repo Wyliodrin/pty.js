@@ -1,0 +1,47 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/ioana/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose has wscript [ undefined,
+verbose has wscript   { dev: true,
+verbose has wscript     file: '/home/ioana/pty.js/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /home/ioana/pty.js/package.json
+verbose loadDefaults wpty.js@0.2.4
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/home/ioana/pty.js', [ 'extend', 'nan', 'mocha' ] ]
+verbose from cache /home/ioana/pty.js/package.json
+info preinstall wpty.js@0.2.4
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "node-waf clean || (exit 0); node-waf configure build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node-waf clean || (exit 0); node-waf configure build' ],
+silly spawning   '/home/ioana/pty.js' ]
+info wpty.js@0.2.4 Failed to exec preinstall script
+ERR! wpty.js@0.2.4 preinstall: `node-waf clean || (exit 0); node-waf configure build`
+ERR! `sh "-c" "node-waf clean || (exit 0); node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the wpty.js@0.2.4 preinstall script.
+ERR! This is most likely a problem with the wpty.js package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf clean || (exit 0); node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls wpty.js
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Linux 3.11.0-15-generic
+ERR! command "node" "/usr/bin/npm" "install"
+ERR! cwd /home/ioana/pty.js
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! code ELIFECYCLE
+ERR! message wpty.js@0.2.4 preinstall: `node-waf clean || (exit 0); node-waf configure build`
+ERR! message `sh "-c" "node-waf clean || (exit 0); node-waf configure build"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
