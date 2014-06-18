@@ -17,7 +17,12 @@
         ],
         'sources' : [
           'src/win/pty.cc'
-        ]
+        ],
+        'libraries': [
+          '-lutil',
+          '-L/usr/lib',
+          '-L/usr/local/lib'
+        ],
       }, { # OS!="win"
         'sources': [
           'src/unix/pty.cc'
