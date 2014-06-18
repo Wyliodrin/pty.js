@@ -18,12 +18,12 @@
         'sources' : [
           'src/win/pty.cc'
         ],
-        'libraries': [
-          '-lutil',
-        ],
       }, { # OS!="win"
         'sources': [
           'src/unix/pty.cc'
+        ],
+        'libraries': [
+          '-lutil',
         ],
       }],
       # http://www.gnu.org/software/gnulib/manual/html_node/forkpty.html
