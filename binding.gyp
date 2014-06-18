@@ -20,8 +20,6 @@
         ],
         'libraries': [
           '-lutil',
-          '-L/usr/lib',
-          '-L/usr/local/lib'
         ],
       }, { # OS!="win"
         'sources': [
