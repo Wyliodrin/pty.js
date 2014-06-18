@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "test": "NODE_ENV=test mocha -R spec",
-    "preinstall": "node-waf clean || (exit 0); node-waf configure build"
+    "preinstall": "node-gyp clean || (exit 0); node-gyp configure build"
   },
   "tags": [
     "pty",
