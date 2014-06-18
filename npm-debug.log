@@ -1,47 +1,199 @@
 info it worked if it ends with ok
-verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+verbose cli [ 'node', '/usr/bin/npm', 'publish' ]
 info using npm@1.1.4
 info using node@v0.6.12
 verbose config file /home/ioana/.npmrc
 verbose config file /usr/etc/npmrc
 verbose config file /usr/share/npm/npmrc
+verbose publish [ '.' ]
 verbose has wscript [ undefined,
-verbose has wscript   { dev: true,
-verbose has wscript     file: '/home/ioana/pty.js/package.json',
+verbose has wscript   { file: '/home/ioana/pty.js/package.json',
 verbose has wscript     contributors: false,
 verbose has wscript     serverjs: false,
 verbose has wscript     wscript: true } ]
 verbose caching /home/ioana/pty.js/package.json
 verbose loadDefaults wpty.js@0.2.4
-verbose readDependencies: using package.json deps
-verbose where, deps [ '/home/ioana/pty.js', [ 'extend', 'nan', 'mocha' ] ]
-verbose from cache /home/ioana/pty.js/package.json
-info preinstall wpty.js@0.2.4
-verbose unsafe-perm in lifecycle true
-silly exec sh "-c" "node-waf clean || (exit 0); node-waf configure build"
-silly spawning [ 'sh',
-silly spawning   [ '-c', 'node-waf clean || (exit 0); node-waf configure build' ],
-silly spawning   '/home/ioana/pty.js' ]
-info wpty.js@0.2.4 Failed to exec preinstall script
-ERR! wpty.js@0.2.4 preinstall: `node-waf clean || (exit 0); node-waf configure build`
-ERR! `sh "-c" "node-waf clean || (exit 0); node-waf configure build"` failed with 1
-ERR! 
-ERR! Failed at the wpty.js@0.2.4 preinstall script.
-ERR! This is most likely a problem with the wpty.js package,
-ERR! not with npm itself.
-ERR! Tell the author that this fails on your system:
-ERR!     node-waf clean || (exit 0); node-waf configure build
-ERR! You can get their info via:
-ERR!     npm owner ls wpty.js
-ERR! There is likely additional logging output above.
+info prepublish wpty.js@0.2.4
+verbose cache add [ '.', null ]
+silly cache add: name, spec, args [ undefined, '.', [ '.', null ] ]
+verbose parsed url { pathname: '.', path: '.', href: '.' }
+verbose has wscript [ undefined,
+verbose has wscript   { file: 'package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching package.json
+verbose loadDefaults wpty.js@0.2.4
+verbose pack /home/ioana/pty.js
+verbose pack /home/ioana/pty.js /tmp/npm-1403105829283/1403105829283-0.6741071429569274/tmp.tgz
+silly makeList /home/ioana/pty.js
+silly dir, dirLen [ '/home/ioana/pty.js', 19 ]
+verbose tarball /tmp/npm-1403105829283/1403105829283-0.6741071429569274/tmp.tgz
+verbose parent /home/ioana/pty.js
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ioana/.npm'
+verbose mkdir done: /home/ioana/.npm 755
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm'
+verbose mkdir done: /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/.npmignore
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/index.js
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/LICENSE
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/README.md
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/wscript
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/package.json
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/package.json~
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/binding.gyp~
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/binding.gyp
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/Makefile
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/lib
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/lib/pty.js
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/lib/pty_win.js
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/build
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/build/.wafpickle-7
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/src
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/src/win
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/src/win/pty.cc
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/src/unix
+silly asyncMap in gTP /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js/src/unix/pty.cc
+silly chmod pty.js 755
+silly chmod .npmignore 644
+silly chmod index.js 644
+silly chmod LICENSE 644
+silly chmod README.md 644
+silly chmod wscript 644
+silly chmod package.json 644
+silly chmod package.json~ 644
+silly chmod binding.gyp~ 644
+silly chmod binding.gyp 644
+silly chmod Makefile 644
+silly chmod lib 755
+silly chmod pty.js 644
+silly chmod pty_win.js 644
+silly chmod build 755
+silly chmod .wafpickle-7 644
+silly chmod src 755
+silly chmod win 755
+silly chmod pty.cc 644
+silly chmod unix 755
+silly chmod pty.cc 644
+verbose gunzed /tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js
+verbose rm'ed /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package
+verbose renamed [ '/tmp/npm-1403105829283/1403105829283-0.6741071429569274/___package.npm/pty.js',
+verbose renamed   '/tmp/npm-1403105829283/1403105829283-0.6741071429569274/package' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/tmp/npm-1403105829283/1403105829283-0.6741071429569274/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package/package.json
+verbose loadDefaults wpty.js@0.2.4
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package/package.json
+verbose pack /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package
+verbose pack /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package /home/ioana/.npm/wpty.js/0.2.4/package.tgz
+silly makeList /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package
+silly dir, dirLen [ '/tmp/npm-1403105829283/1403105829283-0.6741071429569274/package',
+silly dir, dirLen   64 ]
+verbose tarball /home/ioana/.npm/wpty.js/0.2.4/package.tgz
+verbose parent /tmp/npm-1403105829283/1403105829283-0.6741071429569274/package
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/ioana/.npm/wpty.js/0.2.4/___package.npm'
+verbose mkdir done: /home/ioana/.npm/wpty.js/0.2.4/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /home/ioana/.npm/wpty.js/0.2.4/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/.npmignore
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/index.js
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/LICENSE
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/README.md
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/wscript
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/package.json
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/package.json~
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/binding.gyp~
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/binding.gyp
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/Makefile
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/build
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/build/.wafpickle-7
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/lib
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/lib/pty.js
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/lib/pty_win.js
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/src
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/src/win
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/src/win/pty.cc
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/src/unix
+silly asyncMap in gTP /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package/src/unix/pty.cc
+silly chmod package 755
+verbose gunzed /home/ioana/.npm/wpty.js/0.2.4/___package.npm/package
+verbose rm'ed /home/ioana/.npm/wpty.js/0.2.4/package
+verbose renamed [ '/home/ioana/.npm/wpty.js/0.2.4/___package.npm/package',
+verbose renamed   '/home/ioana/.npm/wpty.js/0.2.4/package' ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/home/ioana/.npm/wpty.js/0.2.4/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /home/ioana/.npm/wpty.js/0.2.4/package/package.json
+verbose loadDefaults wpty.js@0.2.4
+silly updated sha bytes 13498
+info shasum dce478d1f415cb3e9d668328faace700b64680e8
+info shasum /home/ioana/.npm/wpty.js/0.2.4/package.tgz
+verbose from cache /home/ioana/.npm/wpty.js/0.2.4/package/package.json
+verbose chmod /home/ioana/.npm/wpty.js/0.2.4/package.tgz 644
+verbose chown [ '/home/ioana/.npm/wpty.js/0.2.4/package.tgz', 1000, 1000 ]
+silly publish { name: 'wpty.js',
+silly publish   description: 'Pseudo terminals for node.',
+silly publish   author: { name: 'Christopher Jeffrey,patched by Wyliodrin' },
+silly publish   version: '0.2.4',
+silly publish   main: './index.js',
+silly publish   repository: { type: 'git', url: 'git://github.com/Wyliodrin/pty.js.git' },
+silly publish   homepage: 'https://github.com/Wyliodrin/pty.js',
+silly publish   bugs: { url: 'https://github.com/chjj/pty.js/issues' },
+silly publish   keywords: [ 'pty', 'tty', 'terminal' ],
+silly publish   scripts: 
+silly publish    { test: 'NODE_ENV=test mocha -R spec',
+silly publish      preinstall: 'node-waf clean || (exit 0); node-waf configure build' },
+silly publish   tags: [ 'pty', 'tty', 'terminal' ],
+silly publish   dependencies: { extend: '~1.2.1', nan: '~1.0.0' },
+silly publish   devDependencies: { mocha: '~1.16.2' },
+silly publish   optionalDependencies: {},
+silly publish   engines: { node: '*' },
+silly publish   _id: 'wpty.js@0.2.4',
+silly publish   _engineSupported: true,
+silly publish   _npmVersion: '1.1.4',
+silly publish   _nodeVersion: 'v0.6.12',
+silly publish   _defaultsLoaded: true,
+silly publish   dist: 
+silly publish    { shasum: 'dce478d1f415cb3e9d668328faace700b64680e8',
+silly publish      tarball: 'http://registry.npmjs.org/wpty.js/-/wpty.js-0.2.4.tgz' } }
+verbose raw, before any munging wpty.js
+verbose url resolving [ 'https://registry.npmjs.org/', './wpty.js' ]
+verbose url resolved https://registry.npmjs.org/wpty.js
+ERR! Failed PUT response undefined
+ERR! Error: Cannot insert data into the registry without authorization
+ERR! See: npm-adduser(1)
+ERR!     at regRequest (/usr/share/npm/lib/utils/npm-registry-client/request.js:74:15)
+ERR!     at PUT (/usr/share/npm/lib/utils/npm-registry-client/request.js:218:3)
+ERR!     at Object.publish (/usr/share/npm/lib/utils/npm-registry-client/publish.js:64:3)
+ERR!     at /usr/share/npm/lib/publish.js:153:14
+ERR!     at [object Object].<anonymous> (fs.js:115:5)
+ERR!     at [object Object].emit (events.js:64:17)
+ERR!     at afterRead (fs.js:1117:12)
+ERR!     at Object.wrapper [as oncomplete] (fs.js:254:17)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/ioana/pty.js/npm-debug.log npm
 ERR! 
 ERR! System Linux 3.11.0-15-generic
-ERR! command "node" "/usr/bin/npm" "install"
+ERR! command "node" "/usr/bin/npm" "publish"
 ERR! cwd /home/ioana/pty.js
 ERR! node -v v0.6.12
 ERR! npm -v 1.1.4
-ERR! code ELIFECYCLE
-ERR! message wpty.js@0.2.4 preinstall: `node-waf clean || (exit 0); node-waf configure build`
-ERR! message `sh "-c" "node-waf clean || (exit 0); node-waf configure build"` failed with 1
-ERR! errno {}
+ERR! message Cannot insert data into the registry without authorization
+ERR! message See: npm-adduser(1)
 verbose exit [ 1, true ]

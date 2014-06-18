@@ -1,10 +1,13 @@
 {
-  "name": "wpty.js",
+  "name": "pty.js",
   "description": "Pseudo terminals for node.",
-  "author": "Christopher Jeffrey,patched by Wyliodrin",
+  "author": "Christopher Jeffrey",
   "version": "0.2.4",
   "main": "./index.js",
-  "repository": "https://github.com/Wyliodrin/pty.js.git",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Wyliodrin/pty.js.git"
+  },
   "homepage": "https://github.com/Wyliodrin/pty.js",
   "bugs": {
     "url": "https://github.com/chjj/pty.js/issues"
@@ -15,7 +18,8 @@
     "terminal"
   ],
   "scripts": {
-    "test": "NODE_ENV=test mocha -R spec"
+    "test": "NODE_ENV=test mocha -R spec",
+    "preinstall": "node-waf clean || (exit 0); node-waf configure build"
   },
   "tags": [
     "pty",
@@ -28,5 +32,9 @@
   },
   "devDependencies": {
     "mocha": "~1.16.2"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
   }
 }
